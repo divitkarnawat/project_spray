@@ -1,0 +1,61 @@
+
+.section
+{
+    padding-top: 85px;
+    padding-bottom: 60px;
+    background-color: rgba(228, 222, 222, 0.945);
+}
+
+.project_images
+{
+    display: inline-block;
+}
+.pjt_img
+{
+    height: 250px;
+    width: 300px;
+    padding: 10px;
+    float: left;
+    transition: transform 1s ease;
+}
+
+.moveOut
+{
+    animation: hola 1s ease forwards;
+}
+
+@keyframes hola{
+    from{
+        opacity: 1;
+    }
+    to{
+        padding: 0px;
+        transform: scale(0,0);
+        width: 0px;
+        height: 0px;
+    }
+}
+
+.moveIn
+{
+    animation: min 1s ease forwards;
+}
+
+
+@keyframes min{
+    from{
+        padding: 0px;
+        transform: scale(0,0);
+        width: 0px;
+        height: 0px;  
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    
+}

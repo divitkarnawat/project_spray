@@ -1,0 +1,53 @@
+
+.section
+{
+    padding-top: 85px;
+    padding-bottom: 60px;
+    background-color: rgba(228, 222, 222, 0.945);
+}
+.container
+{
+    text-align: center;
+}
+.title_team
+{
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: auto;
+    margin-bottom: 2rem;
+       
+}
+.description
+{
+    color: gray;
+    padding: 40px;
+    margin: auto;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.card_team
+{
+    background-color: transparent;
+    box-shadow: 1px 1px 20px 0px black;
+    transition: box-shadow .5s ease-in-out;
+    margin-bottom: 10px;
+}
+.card_team:hover{
+    box-shadow: 3px 5px 60px 0px black;
+}
+.img_team{
+    margin-top: -4rem;
+    clip-path: polygon(50% 0, 100% 0, 96% 70%, 80% 89%, 57% 100%, 43% 100%, 20% 89%, 4% 70%, 0 0);
+
+}
+.card-text{
+    color: gray;
+}
+
+.socialLink
+{
+    margin-top: .8rem;
+  
+
+}

@@ -1,0 +1,31 @@
+.footer_section
+{
+    bottom: 0;
+    background-color: black;
+    color: gray;
+    background-attachment: fixed;
+    padding: 60px;
+    
+}
+.footer_links
+{
+    align-items: flex-end;
+}
+
+.footer_links a,.footer_socialLinks a
+{
+    color: gray;
+    text-decoration: none;
+    transition: color .4s ease;
+}
+
+.footer_links a:hover,.footer_socialLinks a:hover{
+    color: green;
+}
+
+.footer_socialLinks
+{
+   
+    display: inline-block;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.header-wrap{
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    background-color: white;
+    min-height: 70px;
+    
+   
+}
+.navbar-brand{
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+}
+.navbar-brand:hover{
+    color: black;
+}
+.nav-link{
+    color: black;
+    transition: color .4s ease-in-out;
+    font-weight: 500;
+    line-height: 2;
+    margin-left: 10px;
+}
+.nav-link:hover,
+.nav-link:active{
+    color: rgb(9, 253, 9);    
+}

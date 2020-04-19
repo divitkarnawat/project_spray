@@ -1,0 +1,50 @@
+.testimonials
+{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    box-shadow: 2px 2px 20px 2px black;
+    height: 50vh;
+    width: 100%;
+
+}
+
+
+.testi_author
+{
+    color: #1ABC9C;
+    text-shadow: 2px 7px 10px #1ABC9C;
+}
+
+.testi_description
+{
+    font-size: 1.2rem;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn
+{
+    from{
+        opacity: 0;
+
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.btn-testi
+{
+    border-radius: 70%;
+    background-color: transparent;
+    color: white !important;
+    border-color: #1ABC9C;
+    margin: 1rem;
+    margin-bottom: 0px;
+    bottom: 0px;
+    box-shadow: 1px 1px 5px white;
+   
+}
