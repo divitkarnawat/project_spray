@@ -5,54 +5,37 @@
     padding-bottom: 60px;
     background-color: rgba(228, 222, 222, 0.945);
 }
-
-.project_images
+.parts
 {
-    display: inline-block;
+    display: flex;
 }
-.pjt_img
+
+.img-part
 {
-    height: 250px;
-    width: 300px;
-    padding: 10px;
-    float: left;
-    transition: transform 1s ease;
+    max-width: 50%;
 }
-
-.moveOut
+.content-part
 {
-    animation: hola 1s ease forwards;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 50%;
+    background-color: #204379;
 }
 
-@keyframes hola{
-    from{
-        opacity: 1;
+@media only screen and (max-width: 600px) {
+    .img-part{
+        display: none;
     }
-    to{
-        padding: 0px;
-        transform: scale(0,0);
-        width: 0px;
-        height: 0px;
+    .content-part{
+        max-width: 100%;
     }
-}
-
-.moveIn
-{
-    animation: min 1s ease forwards;
-}
+  }
 
 
-@keyframes min{
-    from{
-        padding: 0px;
-        transform: scale(0,0);
-        width: 0px;
-        height: 0px;  
-    }
-    to{
-        opacity: 1;
-    }
-}
+
 
 img{
     height: 100%;

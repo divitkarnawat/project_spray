@@ -1,98 +1,128 @@
-import React, { Component } from 'react';
+import React, { Component, createRef } from 'react';
 import './Header.css';
-
+import LogoSVG from '../../assets/img/Sansiel_Logo_SVG.svg';
 class Header extends Component{
 
     constructor(props)
     {
+    
         super(props);
+        this.headerNavbar = React.createRef();
+        this.menuWrapper = React.createRef();
+        this.hamburger = React.createRef();
         this.state = {
             navLinks: [
                 {
-                    linkName: "HOME",
+                    linkName: "OBER UNS",
                     linkAdd: "#",
                     active: true
                 },
                 {
-                    linkName: "ABOUT",
+                    linkName: "CASE STUDY",
                     linkAdd: "#about",
                     active: false
                 },
+
                 {
-                    linkName: "TEAM",
+                    linkName: "BLOG",
                     linkAdd: "#team",
                     active: false
                 },
                 {
-                    linkName: "WHY US",
+                    linkName: "KONTAKT",
                     linkAdd: "#whyus",
                     active: false
                 },
-                {
-                    linkName: "PROJECTS",
-                    linkAdd: "#projects",
-                    active: false
-                },
-                {
-                    linkName: "PRICE",
-                    linkAdd: "#price",
-                    active: false
-                },
-                {
-                    linkName: "BLOG",
-                    linkAdd: "#blog",
-                    active: false
-                },
-               
-               
-                {
-                    linkName: "CONTACT",
-                    linkAdd: "#contact",
-                    active: false
-                }
-            ]
+                
+            ],
+            scrollCheck: false
         }
     }
 
+    handleHamburger = () =>
+    {
+        console.log(this.hamburger.current.style.display == 'none');
+        this.hamburger.current.classList.toggle('open');
+       const submenu = this.menuWrapper.current;
+       if(!submenu.classList.contains('menuWrapper_display'))
+       {
+            submenu.classList.add('menuWrapper_display');
+            setTimeout(function(){
+                submenu.classList.add('menuWrapper_fadein');
+            }, 10);
+       }
+       else
+       {
+           submenu.classList.remove('menuWrapper_fadein');
+           setTimeout(function(){
+               submenu.classList.remove('menuWrapper_display');
+           }, 500);
+       }
+    }
+
+    componentDidMount()
+    {
+        document.addEventListener('scroll', ()=>{
+            
+            if(window.pageYOffset > 570)
+            {
+                if(!this.state.scrollCheck)
+                {
+                    this.headerNavbar.current.classList.add('navScroll');
+                   
+                    this.setState({scrollCheck: true});
+                }
+            }
+            else{
+                if(this.state.scrollCheck)
+                {
+                    this.headerNavbar.current.classList.remove('navScroll');
+                    this.setState({scrollCheck: false})
+                }
+            }
+        })
+    }
 
 
     render(){
-
-        const navLinks = this.state.navLinks.map((navLink)=>{
-            var navItemState = navLink.active;
-            if(navItemState)
-            {
-                navItemState = "nav-item active";
-            }
-            else{
-                navItemState = "nav-item";
-            }
+        
+        const navlinks = this.state.navLinks.map((navLink)=>{
+            
             return(
-            <li className={navItemState}>
-                <a className="nav-link" href={navLink.linkAdd}>{navLink.linkName}</a>
-            </li>
+            <div className="navLink" onClick={this.handleHamburger}>
+                <a href={navLink.linkAdd} alt={navLink.linkName}>{navLink.linkName}</a>
+            </div>
             );
-        })
+        });
 
-
-
-
+    
         return(
-        <div className="header-wrap">
-              <nav class="navbar navbar-expand-lg fixed-top ">
-                  
-  <a class="navbar-brand" href="#">SoftSourced</a>
-  
-  <div className="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul className="navbar-nav ml-auto">
-    
-        {navLinks}
-  
-    </ul>
-    
-  </div>
-</nav>
+          <>
+          <div className="menuWrapper" ref={this.menuWrapper}>
+              <div className="linksWrapper">
+              {navlinks}
+            
+              </div>
+              
+          </div>
+        <div className="header-wrap" ref={this.headerNavbar}>
+           <div className="brandLogo">
+           <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 45 + 'px'}}>
+  Your browser does not support SVG
+</object>
+           </div>
+           <div className="navLinks">
+               <div className="desktopView">
+               {navlinks}
+               </div>
+               </div>
         </div>
+        <div ref={this.hamburger} id="hamburger" onClick={this.handleHamburger}> 
+                <span></span>
+                <span></span>
+                <span></span>
+               </div>
+            </>
         );
     }
 }

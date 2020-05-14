@@ -32,6 +32,7 @@
     box-shadow: 1px 1px 20px 0px black;
     transition: box-shadow .5s ease-in-out;
     margin-bottom: 10px;
+    height: 230px;
 }
 .card_team:hover{
     box-shadow: 3px 5px 60px 0px black;
@@ -50,4 +51,7 @@
     margin-top: .8rem;
   
 
+}
+.card img{
+    max-height: 200px !important;
 }

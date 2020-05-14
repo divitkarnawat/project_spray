@@ -7,25 +7,13 @@
     padding: 60px;
     
 }
-.footer_links
-{
-    align-items: flex-end;
-}
 
-.footer_links a,.footer_socialLinks a
+.up
 {
-    color: gray;
     text-decoration: none;
-    transition: color .4s ease;
+    color: gray;
 }
-
-.footer_links a:hover,.footer_socialLinks a:hover{
-    color: green;
-}
-
-.footer_socialLinks
+.up-div
 {
-   
-    display: inline-block;
-    text-align: center;
+    text-align: right;
 }

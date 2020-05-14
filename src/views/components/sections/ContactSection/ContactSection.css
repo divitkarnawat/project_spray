@@ -1,31 +1,74 @@
+.section_contact
+{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+  rgba(0, 0, 0, 0.5)), url("../../../../assets/img/map.jpg");
+
+}
+
+input{
+  outline: none !important;
+  font-size: 12px;
+}
+textarea{
+  outline: none !important;
+  font-size: 12px;
+}
+.title_contact
+{
+  color: white;
+  font-weight: 500;
+}
+.divider
+{
+  max-width: 10%;
+}
+
+.contactWrapper
+{
+  background-color: white;
+  box-shadow: 1px 1px 20px black;
+
+}
+.contact_details
+{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 20%;
+}
+.contact_details_divs
+{
+  margin-bottom: 1rem;
+ 
+}
+
+.contact_details_divs h3{
+	 	
+      color: #204379;
+}
+.contact_details_divs p
+{
+  color: gray;
+  font-size: 15px;
+}
+
+
 input[type=text], textarea {
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   width: 100%;
-  padding: 12px; /* Some padding */ 
+  padding: 10px; /* Some padding */ 
   border: 1px solid #ccc; /* Gray border */
   border-radius: 4px; /* Rounded borders */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  
 }
 
 
 
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 30px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 2rem;
-}
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
 
 /* Add a background color and some padding around the form */
 .section {
@@ -33,4 +76,65 @@ input[type=submit]:hover {
   padding-bottom: 60px;
   background-color: #f2f2f2;
  
+}
+
+
+.wpcf7{
+	text-align: left;
+	margin:2em;
+}
+
+.wpcf7 input[type="text"],
+
+.wpcf7 input[type="email"]{
+	max-width: 90%;
+	padding:15px;
+	border-radius: 20px;
+	margin-bottom:-10px;
+	box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.10);
+	
+}
+
+.wpcf7 textarea{
+	max-width: 90%;
+	border-radius: 20px;
+	box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.wpcf7 input:focus[type="text"],
+.wpcf7 textarea:focus,
+.wpcf7 input:focus[type="email"]
+{
+	box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.20);
+	border-color: #204379;
+}
+
+.wpcf7 input[type="submit"] {
+	font-size: 1em;
+	background: white;
+	border: 1px solid #204379;
+	font-family: "Lato";
+	font-weight: bold;
+	border-radius: 0;
+	padding: 1em;
+	width: 120px;
+	color: #204379;
+	 box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+	border-radius: 30px;
+  transition: all .5s ease-in-out;
+  margin-top: 1em;
+
+}
+
+ .wpcf7 input:hover[type="submit"] {
+     
+	   color:white;
+	 	 background-color: #204379;
+
+}
+	  .wpcf7 input:active[type="submit"] {
+     background: #000000;
+ }
+
+.wpcf7-textarea {
+height: 8em;
 }

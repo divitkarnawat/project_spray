@@ -9,22 +9,15 @@ class Footer extends Component
             <div className="footer_section">
                 <div className="row">
                     <div className="col-sm-4 ">
-                    COPYRIGHT SOFTSOURCED
+                    © 2020 Sansiel
+
+
                     </div>
                     <div className="col-sm-4 ">
-                        <div className="footer_socialLinks">
-                    <a href="/"><i className="fa fa-facebook mr-2"></i></a>
-                    <a href="/"><i className="fa fa-linkedin"></i></a>
+                    Powered by WordPress
                     </div>
-                    </div>
-                    <div className="col-sm-4">
-                        <div className="d-flex flex-column footer_links">
-                        <a href="/">TERMS AND CONDITIONS</a>
-                        <a href="/">IMPRESSUM</a>
-                        <a href="/"> PRIVACY POLICY</a>
-                      
-                        </div>
-                        
+                    <div className="col-sm-4 up-div">
+                        <a href="#" className="up">Up </a>
                     </div>
                 </div>
             </div>

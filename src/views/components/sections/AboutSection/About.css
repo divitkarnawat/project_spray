@@ -1,89 +1,20 @@
+.section
+{
+    background-color: white;
+}
 
-.section1
+.divider
 {
-    padding-top: 85px;
-    padding-bottom: 60px;
-    background-color: rgba(228, 222, 222, 0.945);
-}
-.container
-{
-    text-align: center;
-}
-.section2
-{
-    padding-bottom: 5rem;
-    padding-top: 5rem;
+    max-width: 10%;
 }
 
 .title_about
 {
-    font-weight: 500;
-    margin: auto;
-    text-align: left;
-    padding-bottom: 2rem;
-    
-    
-}
-.description1
-{
-    color: gray;
-    padding: 40px;
-    margin: auto;
-    font-size: 15px;
-    line-height: 2;
-}
-.description2
-{
-    
-    color: gray;
-    text-align: left;
-    margin: auto;
-    font-size: 15px;
-    line-height: 2;
+    margin-bottom: 1rem;
 }
 
-.card_about
+.description_about
 {
-    background-color: transparent;
-    box-shadow: 6px 12px 60px 0px black;
-    transition: box-shadow .5s ease-in-out;
-    margin-bottom: 10px;
+    margin: 1rem auto;
 }
-.card_about:hover{
-    box-shadow: 12px 24px 60px 0px black;
-}
-.card img{
-    min-height: 260px;
-}
-.card-text{
-    color: gray;
-}
-
-.progressBars_container
-{
-    margin-bottom: 2rem;
-}
-
-.progress-bar
-{
-    background-color: rgb(26, 188, 156); 
-}
-.progress-bar.pw1
-{
-    width: 98%;
-}
-.progress-bar.pw2
-{
-    width: 72%;
-}
-.progress-bar.pw3
-{
-    width: 84%;
-}
-.progress-bar.pw4
-{
-    width: 91%;
-}
-
-
 

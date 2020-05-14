@@ -2,7 +2,7 @@
 
 .parallax {
     /* The image used */
-    background-image: url("../../assets/img/bg7.jpg");
+    background-image: url("../../assets/img/bg4.png");
   
     /* Set a specific height */
     min-height: 100vh; 
@@ -14,4 +14,41 @@
     background-size: cover;
   }
   
+  .title_div
+  {
+    color: white;
+    padding-top: 20%;
+    display: flex;
+    flex-direction: column;
+
+  }
+
   
+  .title1
+  {
+    font-weight: 500;
+    font-size: 4rem;
+    text-shadow: 2px 1px 20px black;
+  }
+  .title2
+  {
+    font-weight: 500;
+    font-size: 4rem;
+    text-shadow: 2px 1px 20px black;
+    margin-bottom: 3rem;
+  }
+  .title_btn
+  {
+    background: transparent;
+    color: #204379;
+    border: 1.5px solid #204379;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 10px gray;
+    transition: 1s;
+  }
+  .title_btn:hover{
+    background-color: #204379;
+    color: white;
+    transition: 1s;
+  }

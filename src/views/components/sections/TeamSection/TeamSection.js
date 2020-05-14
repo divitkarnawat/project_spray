@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './TeamSection.css';
-import person from "../../../../assets/img/person1_team.png"; 
+import person from "../../../../assets/img/person1_team.jpg"; 
 class Team extends Component{
     constructor(props)
     {
@@ -11,21 +11,28 @@ class Team extends Component{
                     id : 0,
                     img_url: person,
                     name: "NAME",
-                    designation: "DESIGNATION",
+                    designation: "CEO",
                     socialadd: "#"
                 },
                 {
                     id : 1,
                     img_url: person,
                     name: "NAME",
-                    designation: "DESIGNATION",
+                    designation: "CTO",
                     socialadd: "#"
                 },
                 {
                     id : 2,
                     img_url: person,
                     name: "NAME",
-                    designation: "DESIGNATION",
+                    designation: "COO",
+                    socialadd: "#"
+                },
+                {
+                    id : 3,
+                    img_url: person,
+                    name: "NAME",
+                    designation: "CFO",
                     socialadd: "#"
                 }
             ]
@@ -36,7 +43,7 @@ class Team extends Component{
     {
         const team_cards = this.state.team_cards.map((team_card) =>{
                 return(
-                    <div className= "col-sm-12 col-md-4 mb-5 mt-4">
+                    <div className= "col-sm-12 col-md-3 mb-5 mt-4">
                         <div className="card card_team text-center">
                             <img className="card-img-top img_team" src = {team_card.img_url} alt = "team card image"/>
                             <div className="card-body">
@@ -47,7 +54,7 @@ class Team extends Component{
                                     {team_card.designation}
                                 </div>
                                 <div className="socialLink">
-                                    <a href={team_card.socialadd}><i class="fa fa-linkedin" aria-hidden="true"></i> </a>
+                                    <a href={team_card.socialadd}><i class="fab fa-linkedin-in" aria-hidden="true"></i> </a>
                                 </div>
                             </div>
                         </div>

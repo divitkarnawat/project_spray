@@ -10,7 +10,7 @@ import Projects from './sections/ProjectsSection/ProjectSection.js';
 import WhyUs from './sections/WhyUsSection/WhyUsSection.js';
 import Pricing from './sections/PricingSection/PricingSection.js';
 import Testimonials from './sections/TestimonialSection/TestimonialSection.js';
-import Blog from './sections/BlogSection/BlogSection.js';
+
 import Footer from '../../components/Footer/Footer.js';
 
 class App extends Component{
@@ -25,15 +25,15 @@ class App extends Component{
 
     <div>
       <Header />
-    <Parallax />
+      <Parallax />
  
     <div id="about">   <About /></div>
     <div id="team">  <Team /></div>
     <div id="whyus">    <WhyUs /></div>
     <div id="projects">  <Projects /></div>
-    <div id="price">  <Pricing /></div>
-    <div id="blog"> <Blog /></div>
-    <Testimonials />
+
+   
+ 
     <div id="contact">  <Contact /></div>
     
 
