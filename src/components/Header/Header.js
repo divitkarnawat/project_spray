@@ -40,8 +40,10 @@ class Header extends Component{
     }
 
     handleHamburger = () =>
-    {
-        console.log(this.hamburger.current.style.display == 'none');
+    {   
+        if(window.innerWidth < 1000)
+        {
+  
         this.hamburger.current.classList.toggle('open');
        const submenu = this.menuWrapper.current;
        if(!submenu.classList.contains('menuWrapper_display'))
@@ -58,6 +60,7 @@ class Header extends Component{
                submenu.classList.remove('menuWrapper_display');
            }, 500);
        }
+    }
     }
 
     componentDidMount()

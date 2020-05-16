@@ -1,6 +1,7 @@
 .section_whyus
 {
 	background-image: url("../../../../assets/img/caseStudy.png");
+	background-attachment: fixed;
 	min-height: 100vh;
 }
 
@@ -10,13 +11,10 @@
 {
     color:white;
     margin: 2rem auto;
-
+	font-weight: bold;
 }
 
-.divider
-{
-	max-width: 10%;
-}
+
 
 .casestudy_wrapper
 {
@@ -29,16 +27,56 @@
 .part-title
 {
 	font-weight: 500;
+	color: #204379;
 }
 .part{
 	display: flex;
 	padding: 40px;
 	padding-top: 9rem;
 	flex-direction: column;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
+	color: #204379;
+
+	align-items: center;
+
+	h3
+	{
+		font-size: 26px;
+		font-family: sans-serif;
+		margin-bottom: .1rem;
+	}
+	p{
+		font-size: 14px;
+		text-align: center;
+	}
+
+.divider
+	{
+		min-width: 30px;
+		height: 1px;
+		border: 1px solid black;
+		margin-bottom: 1rem;
+	}
 }
 
+.case_btn
+{
+  background: transparent;
+  color: #204379;
+  border: 1.5px solid #204379;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  box-shadow: 1px 1px 10px gray;
+  transition: 1s;
+  display: inline-block;
+  font-size: 13px;
 
+}
+.case_btn:hover{
+  background-color: #204379;
+  color: white;
+  transition: 1s;
+}
 
 
 

@@ -13,11 +13,8 @@
 
 .navScroll
 {
-    background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(44,153,221,1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(44,153,221,1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(44,153,221,1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(44,153,221,1) 100%);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(44,153,221,1) 100%);   
+   background-color: white;
+   transition: 1s;; 
   
     z-index: 10;
   

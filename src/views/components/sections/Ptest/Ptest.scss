@@ -1,0 +1,234 @@
+
+.ptest_section
+{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  background: linear-gradient(transparent, black 97%, black 100%);
+  padding-bottom: 40px;
+    .row
+    {
+        width: 100%;
+    }
+    .title
+    {
+        font-weight: 700;
+        margin: 20px auto;
+        padding: 20px;
+
+    }
+    
+}
+
+
+
+.popup
+{
+  
+
+
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    background: #4776E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    z-index: 9;
+    transition: 1s;
+    opacity: 0;
+    display: none;
+    .backbtn
+    {
+        display: inline-block;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    color: white;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px black;
+    padding: 5px;
+    cursor: pointer;
+}
+    
+}
+.popup_content
+{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin-top: 10px;
+}
+
+.popup_fadein
+{
+    opacity: 1;
+    transition: 1s;
+}
+.popup_display
+{
+    display: block;
+}
+
+
+
+
+.pcard
+{   
+    position: relative;
+    width: 85%;
+    height: 46vh;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 10px 5px 20px rgba(0,0,0,.7);
+
+  
+}
+
+
+
+.pimg
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    img{
+        height: 100%;
+        width: 100%;
+     
+       
+    }
+    
+}
+.pcontent
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    background: transparent;
+    color: white;
+    padding: 12px;
+    outline: transparent solid 2px;
+        outline-offset: 0px;
+        transition: .4s;
+
+        .ptitle
+        {
+            transform: translateY(-10px);
+            text-shadow: 1px 1px 3px black, -1px 1px 2px black ;
+            transition: .4s;
+        }
+    .pdescription
+    {
+      
+        font-size: 12px;
+        text-align: center;
+        opacity: 0;
+        transition: .4s;
+        transform: translateY(20px);
+        
+    }
+  
+}
+
+.pbutton
+{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding: 6px 20px;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    z-index: 4;
+    background-color: rgba(0,0,0,.5);
+    transform: translate(-50%, -20px);
+    box-shadow:  1px 1px 10px black;
+}
+
+@media only screen and (min-width: 900px)
+{
+    .pcard{
+        &::after
+        {
+        
+                content: "";
+                position: absolute;
+                  top: -50%;
+                left: -60%;
+                width: 20%;
+                height: 200%;
+                opacity: 0;
+                transform: rotate(30deg);
+                transition: all .4s;
+                background: rgba(255, 255, 255, 0.13);
+                background: linear-gradient(
+                  to right,
+                  rgba(255, 255, 255, 0.13) 0%,
+                  rgba(255, 255, 255, 0.13) 77%,
+                  rgba(255, 255, 255, 0.5) 92%,
+                  rgba(255, 255, 255, 0.0) 100%
+                );
+             
+        }
+    
+        &:hover{
+            &::after{
+                opacity: 1;
+                left: 130%;
+                transition-property: left, top, opacity;
+                transition-duration: 0.7s, 0.7s, 0.15s;
+                transition-timing-function: ease;
+            }
+            img{
+                filter: blur(2px);
+            transition: .4s;
+            
+        }
+        .pcontent
+        {
+        
+            outline: #fff solid 2px; outline-offset: -10px;
+            background-color: rgba(0,0,0,.6);
+        
+            transition: .4s;
+        }
+        .ptitle
+        {
+            transform: translateY(0);
+            transition: .4s;
+        }
+        .pdescription
+        {
+            opacity: 1;
+            transform: translateY(0);
+            transition: .5s;
+        }
+        }
+        
+    }
+    .pbutton
+    {
+        display: none;
+    }
+}
