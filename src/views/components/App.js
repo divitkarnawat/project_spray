@@ -9,7 +9,7 @@ import Team from './sections/TeamSection/TeamSection.js';
 import Projects from './sections/ProjectsSection/ProjectSection.js';
 import WhyUs from './sections/WhyUsSection/WhyUsSection.js';
 import Rcard from './sections/Rcard/Rcard.js';
-
+import ProductsSection from './sections/ProductsSection/ProductsSection.js';
 import Ptest from './sections/Ptest/Ptest.js';
 import Footer from '../../components/Footer/Footer.js';
 
@@ -29,7 +29,7 @@ class App extends Component{
  
     <div id="about">   <About /></div>
     <div id="team">   <Rcard/></div>
- 
+    <div><ProductsSection /></div>
     <div id="projects">   <Ptest/></div>
 
    

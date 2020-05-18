@@ -1,0 +1,41 @@
+.content_wrapper
+{
+    text-align: left;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .desc
+    {
+        font-size: 15px;
+    }
+}
+
+.project
+{
+    margin: 20px auto;
+    min-height: 35%;
+}
+
+.img_wrapper
+{
+   
+  margin-bottom: 10px;
+  text-align: left;
+    img
+    {
+        border-radius: 10px;
+        min-height: 160px;
+        min-width: 280px;
+        max-width: 300px;
+    }
+}
+.divider
+{
+    border-bottom: 2px solid black;
+    width: 10%;
+    margin-bottom: 20px;
+    margin-top: -5px;
+}
+
