@@ -5,9 +5,12 @@
   
 }
 
-.divider
+.abt_s .divider
 {
-    max-width: 10%;
+    border-bottom: 2px solid black;
+    width: 7%;
+    margin-bottom: 20px;
+    margin-top: -10px;
 }
 
 .title_about

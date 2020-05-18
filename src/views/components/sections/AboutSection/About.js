@@ -17,10 +17,10 @@ class About extends Component {
 
     render(){
     return (
-    <div className="section">
+    <div className="section abt_s">
       <div className="container">
                     <h2 className="title title_about">UERS UNS</h2>
-                    <hr className="divider" />
+                    <div className="divider" />
         
             
             <p className="description description_about">

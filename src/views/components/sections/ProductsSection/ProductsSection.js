@@ -58,7 +58,7 @@ class ProductsSection extends Component {
             );
         })
     return (
-    <div className="section">
+    <div className="section product_section">
       <div className="container">
                     <h2 className="title title_about">PRODUKT</h2>
                     <div className="divider" />
