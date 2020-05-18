@@ -1,3 +1,4 @@
+/*
 .footer_section
 {
     bottom: 0;
@@ -7,13 +8,26 @@
     padding: 60px;
     
 }
+.cb
+{
+    margin-bottom: 10px;
+}
+.cd,.cf
+{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 400)
+{
+    .contact_details
+    {
+        text-align: center;
+    }
+    .flinks
+    {
+        text-align: center;
+    }
+}
 
-.up
-{
-    text-decoration: none;
-    color: gray;
-}
-.up-div
-{
-    text-align: right;
-}
+*/

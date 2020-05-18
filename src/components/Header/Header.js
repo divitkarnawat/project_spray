@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import './Header.css';
+import './Header.scss';
 import LogoSVG from '../../assets/img/Sansiel_Logo_SVG.svg';
 class Header extends Component{
 

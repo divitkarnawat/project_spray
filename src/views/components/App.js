@@ -5,8 +5,7 @@ import Header from '../../components/Header/Header.js';
 import Parallax from '../../components/Parallax/Parallax.js';
 import About from './sections/AboutSection/About.js';
 import Contact from './sections/ContactSection/ContactSection.js';
-import Team from './sections/TeamSection/TeamSection.js';
-import Projects from './sections/ProjectsSection/ProjectSection.js';
+
 import WhyUs from './sections/WhyUsSection/WhyUsSection.js';
 import Rcard from './sections/Rcard/Rcard.js';
 import ProductsSection from './sections/ProductsSection/ProductsSection.js';

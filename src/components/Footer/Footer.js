@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Footer.css';
-
+import LogoSVG from '../../assets/img/Sansiel_Logo_SVG.svg';
 class Footer extends Component
 {
     render()
@@ -8,16 +8,29 @@ class Footer extends Component
         return(
             <div className="footer_section">
                 <div className="row">
-                    <div className="col-sm-4 ">
-                    © 2020 Sansiel
+                    <div className="col-sm-4 col-12 cb">
+                    <div >
+           <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 40 + 'px'}}>
+  Your browser does not support SVG
+</object>
+           </div>
 
 
                     </div>
-                    <div className="col-sm-4 ">
-                    Powered by WordPress
+                    <div className="col-sm-4 col-12 cd">
+                        <div className="contact_details">
+                            <div>Musterstrasse, Musterland</div>
+                            <div>+880 168 108 109 1425<br/>+0216 809 172</div>
+                            <div>info@sansiel.com</div>
+                        </div>
                     </div>
-                    <div className="col-sm-4 up-div">
-                        <a href="#" className="up">Up </a>
+                    <div className="col-sm-4 col-12 cf">
+                        <div className="flinks">
+                        <div><a>Datenschutzerklärung</a></div>
+                        <div><a>Impressum</a></div>
+                        <div>Copyright</div>
+                        <div>Developed by softsourced</div>
+                        </div>
                     </div>
                 </div>
             </div>
