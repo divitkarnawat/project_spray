@@ -1,22 +1,40 @@
-/*
+
 .footer_section
 {
     bottom: 0;
     background-color: black;
     color: gray;
     background-attachment: fixed;
-    padding: 60px;
+    padding: 50px;
+    color: white;
+
+    a
+    {
+      
+        padding: 0;
+        text-shadow: none;
+        font-weight: normal;
+    }
     
 }
-.cb
+.fas
 {
-    margin-bottom: 10px;
+    margin-right: 5px;
+}
+.contact_details
+{
+    margin-top: 0;
+    padding: 0;
+}
+.cb,.cd
+{
+    margin-bottom: 20px;
 }
 .cd,.cf
 {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+
 }
 @media only screen and (max-width: 400)
 {
@@ -30,4 +48,3 @@
     }
 }
 
-*/
