@@ -10,6 +10,7 @@ const Parallax = (props) => {
         <h1 className="title2">   IS YOUR SOLUTION  </h1>
         <div><a href="#about"><button className="title_btn">Learn More</button></a></div>
         </div>
+      
         </div>
 
     );

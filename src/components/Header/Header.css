@@ -3,8 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    max-height: 12%;
-    box-shadow: 1px 1px 10px black;
+   
     background: transparent;
     display: flex;
     transition: .5s;
@@ -192,7 +191,7 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
       .brandLogo
       {
           padding: 6px;
-          width: 40%;
+          width: 70%;
       }
       .desktopView  
       {

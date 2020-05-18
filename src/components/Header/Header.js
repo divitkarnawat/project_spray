@@ -110,7 +110,7 @@ class Header extends Component{
           </div>
         <div className="header-wrap" ref={this.headerNavbar}>
            <div className="brandLogo">
-           <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 45 + 'px'}}>
+           <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 40 + 'px'}}>
   Your browser does not support SVG
 </object>
            </div>
