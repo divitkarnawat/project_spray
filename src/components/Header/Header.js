@@ -13,24 +13,24 @@ class Header extends Component{
         this.state = {
             navLinks: [
                 {
-                    linkName: "OBER UNS",
-                    linkAdd: "#",
+                    linkName: " ÜBER UNS",
+                    linkAdd: "#about",
                     active: true
                 },
                 {
-                    linkName: "CASE STUDY",
-                    linkAdd: "#about",
+                    linkName: "TEAM",
+                    linkAdd: "#team",
                     active: false
                 },
 
                 {
-                    linkName: "BLOG",
-                    linkAdd: "#team",
+                    linkName: "PRODUKTS",
+                    linkAdd: "#product",
                     active: false
                 },
                 {
                     linkName: "KONTAKT",
-                    linkAdd: "#whyus",
+                    linkAdd: "#contact",
                     active: false
                 },
                 
@@ -65,24 +65,19 @@ class Header extends Component{
 
     componentDidMount()
     {
+        var prevScrollPos = window.pageYOffset;
         document.addEventListener('scroll', ()=>{
-            
-            if(window.pageYOffset > 570)
+            let currentScrollPos = window.pageYOffset;
+            if(currentScrollPos > prevScrollPos)
             {
-                if(!this.state.scrollCheck)
-                {
-                    this.headerNavbar.current.classList.add('navScroll');
-                   
-                    this.setState({scrollCheck: true});
-                }
+                this.headerNavbar.current.style.top = "-100px";
+                this.hamburger.current.style.top = "-100px";
             }
             else{
-                if(this.state.scrollCheck)
-                {
-                    this.headerNavbar.current.classList.remove('navScroll');
-                    this.setState({scrollCheck: false})
-                }
+                this.headerNavbar.current.style.top = "0px";
+                this.hamburger.current.style.top = "14px";
             }
+         prevScrollPos = currentScrollPos;
         })
     }
 

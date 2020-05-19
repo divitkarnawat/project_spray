@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import './About.css'
+import './About.css';
+import Ptest from '../Ptest/Ptest'
 
 class About extends Component {
 
@@ -19,7 +20,7 @@ class About extends Component {
     return (
     <div className="section abt_s">
       <div className="container">
-                    <h2 className="title title_about">UERS UNS</h2>
+                    <h2 className="title title_about"> ÜBER UNS</h2>
                     <div className="divider" />
         
             
@@ -37,7 +38,7 @@ Des Weiteren bieten wir für unsere Produkte die Fachberatung und Schulung der A
               
             </div>
       </div>
-     
+     <Ptest />
     
     </div>
   );

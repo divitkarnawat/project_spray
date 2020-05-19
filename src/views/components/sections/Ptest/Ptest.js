@@ -1,9 +1,9 @@
 import React, { Component, createRef } from 'react';
 import './Ptest.scss';
-import img1 from '../../../../assets/img/blogboil.jpg';
-import img2 from '../../../../assets/img/blogtrain.jpg';
-import img3 from '../../../../assets/img/blogwall.jpg';
-import img4 from '../../../../assets/img/bloglab.jpg';
+import img1 from '../../../../assets/img/abt1.jpg';
+import img2 from '../../../../assets/img/abt2.jpg';
+import img3 from '../../../../assets/img/abt3.jpg';
+//import img4 from '../../../../assets/img/abt1.jpg';
 
 class Ptest extends Component{
     constructor(props)
@@ -13,6 +13,11 @@ class Ptest extends Component{
     
         this.state = {
             content: [
+                {
+                    title: "LOREM IPSUM",
+                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
+                    imgURL: img3 
+                },
                 {
                     title: "LOREM IPSUM",
                     description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
@@ -26,12 +31,7 @@ class Ptest extends Component{
                 {
                     title: "LOREM IPSUM",
                     description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img3 
-                },
-                {
-                    title: "LOREM IPSUM",
-                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img4 
+                    imgURL: img3
                 }
             ],
             popactive: 0
@@ -39,26 +39,6 @@ class Ptest extends Component{
     }
     
 
-    handlePopup = (cidx) =>
-    {    
-       const submenu = this.popup.current;
-       if(!submenu.classList.contains('popup_display'))
-       {
-            submenu.classList.add('popup_display');
-            setTimeout(function(){
-                submenu.classList.add('popup_fadein');
-            }, 10);
-            this.setState({popactive: cidx});
-       }
-       else
-       {
-           submenu.classList.remove('popup_fadein');
-           setTimeout(function(){
-               submenu.classList.remove('popup_display');
-           }, 500);
-       }
-
-    }
 
 render()
 {
@@ -69,20 +49,18 @@ render()
 
               <div className="row" style={{margin: `0 auto`}}>
                   <div className="col-12">
-                <div className="pcard">
+                <div className="pcard" data-aos="fade-up"  data-aos-once="true"
+   >
                     <div className="pimg">
                         <img src={projectCard.imgURL} />
                     </div>
                     <div className="pcontent">
-                        <div className="ptitle">
+                        <h3 className="ptitle">
                             {projectCard.title}
-                        </div>
-                        <div className="pdescription">
-                            {projectCard.description}
-                        </div>
+                        </h3>
+                        
                     </div>
-                    <button className="pbutton" onClick={()=>{console.log(idx); this.handlePopup(idx)}}>Learn More</button>
-                </div>
+                    </div>
                 </div>
             </div>
     
@@ -94,20 +72,18 @@ render()
             
               <div className="row"style={{margin: `0 auto`}}>
                   <div className="col-12">
-                <div className="pcard">
+                <div className="pcard" data-aos="fade-up"  data-aos-once="true"
+    >
                     <div className="pimg">
                         <img src={projectCard.imgURL} />
                     </div>
                     <div className="pcontent">
-                        <div className="ptitle">
+                        <h3 className="ptitle">
                             {projectCard.title}
-                        </div>
-                        <div className="pdescription">
-                            {projectCard.description}
-                        </div>
+                        </h3>
+                      
                     </div>
-                    <button className="pbutton" onClick={()=>{this.handlePopup(idx)}}>Learn More</button>
-                    </div>
+                   </div>
                 </div>
             </div>
     
@@ -119,14 +95,7 @@ render()
     
             
             <div className="ptest_section">
-                <div className="popup" ref={this.popup}>
-                    <div className="backbtn" onClick={()=>{this.handlePopup(0)}}>{`<-`}</div>
-                    <div className="popup_content">
-                        <h2>{this.state.content[this.state.popactive].title}</h2>
-                        <p>{this.state.content[this.state.popactive].description}</p>
-                    </div>
-                </div>
-            <div className="title"><h3>UNSER BLOG</h3></div>
+             
             <div className="row">
             <div className="col-12 col-sm-6 ">
                 {projectCardsr1}

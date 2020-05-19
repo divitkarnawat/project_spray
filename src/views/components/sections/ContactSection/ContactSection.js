@@ -10,7 +10,7 @@ render()
      
             <div className="container">
             <h2 className="title_contact">
-                 Contact Us
+            Kontakt
             </h2>
             <div className="divider" />
            
@@ -22,10 +22,10 @@ render()
   <form  className="wpcf7" action="#">
     <div className = "row">
     <div className="col-12" id= "firstinput">
-      <input required  type="text" id="fname" name="firstname" placeholder="First Name" />
+      <input required  type="text" id="fname" name="firstname" placeholder="Vorname" />
     </div>
     <div className="col-12">
-      <input required  type="text" id="lname" name="lastname" placeholder="Last Name" />
+      <input required  type="text" id="lname" name="lastname" placeholder="Nachname" />
     </div>
     <div className="col-12 " id = "lastinput">
       <input required  type="text" id="email" name="email" placeholder="Email" />
@@ -34,7 +34,7 @@ render()
     
     <div className="row">
         <div className="col-12">
-    <textarea  id="message" name="message" placeholder="Message" rows="8" ></textarea>
+    <textarea  id="message" name="message" placeholder="Nachricht" rows="8" ></textarea>
     </div>
     </div>
     <input type="submit" value="Submit" />

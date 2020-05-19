@@ -3,32 +3,25 @@
     top: 0;
     left: 0;
     width: 100%;
-   
-    background: transparent;
+    padding-top: 5px;
+    background: white;
     display: flex;
-    transition: .5s;
+    transition: .2s;
     z-index: 15;
 }
 
-.navScroll
-{
-   background-color: white;
-   transition: 1s;; 
-  
-    z-index: 10;
-  
-}
+
 
 .brandLogo
 {
     padding: 10px;
     padding-left: 0px;
-    width: 25%;
+    width: 20%;
 }
 
 .navLinks
 {
-    width: 75%;
+    width: 80%;
     padding: 10px;
     height: 100%;
     align-items: center;
@@ -70,9 +63,10 @@ a:hover{
     min-height: 100vh;
     top: 0;
     left: 0;
-    background: #4776E6;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-color: white;
+  /*  background: #4776E6;  
+background: -webkit-linear-gradient(to right, #8E54E9, #4776E6);  
+background: linear-gradient(to right, #8E54E9, #4776E6);  */
 
     z-index: 40;
     transition: 1s;
@@ -118,7 +112,7 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
     width: 34px;
     height: 20px;
     position: fixed;
-    top: 9px;
+    top: 14px;
     right: 10px;
     z-index: 50;
     background: transparent;
@@ -127,10 +121,10 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
     cursor: pointer;
   }
   
@@ -187,7 +181,14 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
   }
 
 
-  @media only screen and (max-width: 1000px)
+  @media only screen and (min-width: 760px) and (max-width: 800px)
+  {
+    .brandLogo
+    {
+      width: 30%;
+    }
+  }
+  @media only screen and (max-width: 760px)
   {
       .brandLogo
       {

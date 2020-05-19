@@ -2,15 +2,15 @@
 .footer_section
 {
     bottom: 0;
-    background-color: black;
-    color: gray;
+    background-color: white;
+    color: black;
     background-attachment: fixed;
     padding: 50px;
-    color: white;
+  
 
     a
     {
-      
+        letter-spacing: 0;
         padding: 0;
         text-shadow: none;
         font-weight: normal;
@@ -25,10 +25,15 @@
 {
     margin-top: 0;
     padding: 0;
+    color: black;
 }
-.cb,.cd
+.cb
 {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+}
+.cd
+{
+    margin-bottom: 10px;
 }
 .cd,.cf
 {
@@ -36,15 +41,32 @@
     justify-content: center;
 
 }
-@media only screen and (max-width: 400)
+
+.fdivider
 {
-    .contact_details
+    border-top: 1px solid gray;
+    margin: 10px auto;
+}
+.ext_footer
+{
+    div
     {
         text-align: center;
+        color: gray;
     }
-    .flinks
+}
+@media only screen and (max-width: 1000px)
+{
+   .cd, .cf{
+       justify-content: left;
+   }
+   .ext_footer
+{
+    div
     {
-        text-align: center;
+        text-align: left;
     }
+}
+
 }
 

@@ -38,8 +38,9 @@ class ProductsSection extends Component {
         {
             return(
                 <>
-                <div className="row project">
-                    <div className="col-12 col-md-4 img_wrapper">
+                <div className="row project" data-aos="fade-up" data-aos-duration="1500"
+    data-aos-easing="ease-in-out" >
+                    <div className="col-12 col-md-4 img_wrapper" >
                         <img src={this.state.content.imgURLs[idx]} alt="Project1"/>
                     </div>
                     <div className="col-12 col-md-8 content_wrapper">

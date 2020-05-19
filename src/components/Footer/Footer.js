@@ -11,7 +11,8 @@ class Footer extends Component
                     <div className="col-sm-4 col-12 cb">
                     <div >
            <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 40 + 'px'}}>
-  Your browser does not support SVG
+           Ihr Browser unterstützt SVG nicht
+
 </object>
            </div>
 
@@ -19,19 +20,25 @@ class Footer extends Component
                     </div>
                     <div className="col-sm-4 col-12 cd">
                         <div className="contact_details">
-        <div><i class="fas fa-map-marker-alt"></i>Musterstrasse, Musterland</div>
-                            <div><i class="fas fa-phone-alt"></i>+880 168 108 109 1425<br/>+0216 809 172</div>
-                            <div><i class="fas fa-envelope"></i>info@sansiel.com</div>
+        <div><i class="fas fa-map-marker-alt"></i> Augustaanlage 17, 68165 Mannheim</div>
+                            <div><i class="fas fa-phone-alt"></i>+49 621 405492 00</div>
+                            <div><i class="fas fa-envelope"></i>info@sansiel.de</div>
                         </div>
                     </div>
                     <div className="col-sm-4 col-12 cf">
                         <div className="flinks">
                         <div><a>Datenschutzerklärung</a></div>
                         <div><a>Impressum</a></div>
-                        <div>Copyright</div>
-                        <div>Developed by softsourced</div>
+                       
+                        
                         </div>
                     </div>
+                </div>
+                <div className="row fdivider"></div>
+                <div className="row ext_footer">
+                    <div className="col-sm-4">© 2020 Sansiel GmbH</div>
+        
+                    <div className="col-sm-4 offset-sm-4">Entwickelt von softsourced</div>
                 </div>
             </div>
 

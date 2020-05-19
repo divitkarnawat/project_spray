@@ -31,7 +31,7 @@ textarea{
 {
   background-color: white;
   box-shadow: 1px 1px 20px black;
-  border-radius: 10px;
+  
   width: 90%;
   margin: auto;
 
@@ -116,32 +116,29 @@ input[type=text], textarea {
 }
 
 .wpcf7 input[type="submit"] {
-	font-size: .8em;
-	background: white;
-	border: 1px solid #204379;
-	font-family: "Lato";
-	font-weight: bold;
+ 
+    background: white;
+    color: #204379;
+    margin-top: 10px;
+    border: 1.5px solid #204379;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px gray;
+    transition: 1s;
+  
+  }
 
-	padding: .6em;
-	width: 100px;
-	color: #204379;
-	 box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-	border-radius: 30px;
-  transition: all .5s ease-in-out;
-  margin-top: 1em;
+.wpcf7 input[type="submit"]:hover{
+    background-color: #204379;
+    color: white;
+    transition: 1s;
+  }
 
-}
 
- .wpcf7 input:hover[type="submit"] {
-     
-	   color:white;
-	 	 background-color: #204379;
 
-}
-	  .wpcf7 input:active[type="submit"] {
-     background: #000000;
- }
 
+ 
 .wpcf7-textarea {
 height: 8em;
 }
