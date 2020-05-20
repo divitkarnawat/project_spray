@@ -43,8 +43,8 @@
 .tilter {
 	display: block;
 	position: relative;
-	width: 320px;
-	height: 400px;
+	width: 350px;
+	height: 428px;
 	margin: 0;
 	color: #fff;
 	flex: none;
@@ -113,7 +113,7 @@
 	height: 200%;
 	top: -50%;
 	left: -50%;
-	background-image: linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0.1) 50%, transparent 100%);
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, .1) 50%,transparent 100%);
 }
 
 .tilter__deco--lines {
@@ -126,7 +126,8 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 4em;
+	padding: 3em;
+	text-shadow: 1px 1px 10px black;
 }
 
 .tilter__title {
