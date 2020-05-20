@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import './ProfileSection.scss';
+import teamCard1 from '../../../../assets/img/tcard_mf.png';
+import teamCard2 from '../../../../assets/img/tcard3.jpg';
+import teamCard3 from '../../../../assets/img/tcard4.jpg';
+
 class ProfileSection extends Component
 {
     constructor(props)
@@ -10,6 +14,7 @@ class ProfileSection extends Component
             content: {
                 name:["Gunter Gomola","Thomas Hensel","Michael Friedmann"],
                 desig:["Geschäftsführender Gesellschafter","Geschäftsführender Gesellschafter","Geschäftsführender Gesellschafter"],
+                imgURL:[teamCard2, teamCard3, teamCard1],
                 desc:[
                     "",
                     "",
@@ -22,7 +27,7 @@ class ProfileSection extends Component
     render()
     {
         let pid = 0;
-        let imgsrc = this.props.location.state.imgsrc;
+       
 
         switch(this.props.match.params.pid)
         {
@@ -50,8 +55,8 @@ class ProfileSection extends Component
                            <h2> {this.state.content.name[pid]}</h2>
                        </div>
                        <div className="p_img">
-                           <img src={imgsrc} alt="profile pic" />
-                           {console.log(imgsrc)}
+                           <img src={this.state.content.imgURL[pid]} alt="profile pic" />
+                         
                        </div>
                        <div className="p_desc">
                            {desc}
