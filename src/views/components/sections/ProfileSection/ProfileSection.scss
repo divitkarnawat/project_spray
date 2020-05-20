@@ -1,0 +1,33 @@
+.profile
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.p_s
+{
+    border-bottom: 2px solid black;
+}
+.p_img
+{
+    height: 400px;
+    width: 400px;
+    max-height: 90vh;
+    max-width: 90vw;
+    margin: 20px auto;
+   
+    img
+    {
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+    }
+}
+.backbtn
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+}

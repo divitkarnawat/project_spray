@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 import './Rcard.scss';
-import teamCard1 from '../../../../assets/img/tcard2.jpg';
+import teamCard1 from '../../../../assets/img/tcard_mf.png';
 import teamCard2 from '../../../../assets/img/tcard3.jpg';
 import teamCard3 from '../../../../assets/img/tcard4.jpg';
 
@@ -258,7 +259,7 @@ class Rcard extends Component{
         <div class="content content--c1">
 				
 			
-			<a href="#" className="tilter tilter--1"  data-aos="fade-up">
+			<Link to={{pathname:"/profile/GGomola",state: {teamCard2}}}><a className="tilter tilter--1"  data-aos="fade-up">
 					<figure className="tilter__figure">
 						<img className="tilter__image" src={teamCard2} alt="img02" />
 						<div className="tilter__deco tilter__deco--shine"><div></div></div>
@@ -271,10 +272,11 @@ class Rcard extends Component{
 						</svg>
 					</figure>
 				</a>
+				</Link>
 			
-				<a href="#" className="tilter tilter--1"  data-aos="fade-up">
+				<Link to={{pathname:"/profile/THensel",state: {teamCard3}}}><a className="tilter tilter--1"  data-aos="fade-up">
 					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard1} alt="img01" />
+						<img className="tilter__image" src={teamCard3} alt="img01" />
 						<div className="tilter__deco tilter__deco--shine"><div></div></div>
 						<figcaption className="tilter__caption">
 							<h3 className="tilter__title"> Thomas Hensel</h3>
@@ -285,9 +287,10 @@ class Rcard extends Component{
 						</svg>
 					</figure>
 				</a>
-				<a href="#" className="tilter tilter--1"  data-aos="fade-up">
+				</Link>
+				<Link to={{pathname:"/profile/MFriedmann",state: {imgsrc: teamCard1}}}><a href="#" className="tilter tilter--1"  data-aos="fade-up">
 					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard3} alt="img02" />
+						<img className="tilter__image" src={teamCard1} alt="img02" />
 						<div className="tilter__deco tilter__deco--shine"><div></div></div>
 						<figcaption className="tilter__caption">
 							<h3 className="tilter__title">Michael Friedmann</h3>
@@ -298,53 +301,10 @@ class Rcard extends Component{
 						</svg>
 					</figure>
 				</a>
+				</Link>
 
 			</div>
-			<div class="content content--c1">
-				
-			
-			<a href="#" className="tilter tilter--1"  data-aos="fade-up">
-					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard3} alt="img02" />
-						<div className="tilter__deco tilter__deco--shine"><div></div></div>
-						<figcaption className="tilter__caption">
-							<h3 className="tilter__title">Prof. Dr. Ralf Rößler</h3>
-							<p className="tilter__description">Gesellschafter</p>
-						</figcaption>
-						<svg className="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-							<path d="M20.5,20.5h260v375h-260V20.5z" />
-						</svg>
-					</figure>
-				</a>
-			
-				<a href="#" className="tilter tilter--1"  data-aos="fade-up">
-					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard2} alt="img01" />
-						<div className="tilter__deco tilter__deco--shine"><div></div></div>
-						<figcaption className="tilter__caption">
-							<h3 className="tilter__title">Manfred Kaulhausen</h3>
-							<p className="tilter__description">Gesellschafter</p>
-						</figcaption>
-						<svg className="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-							<path d="M20.5,20.5h260v375h-260V20.5z" />
-						</svg>
-					</figure>
-				</a>
-				<a href="#" className="tilter tilter--1"  data-aos="fade-up">
-					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard1} alt="img02" />
-						<div className="tilter__deco tilter__deco--shine"><div></div></div>
-						<figcaption className="tilter__caption">
-							<h3 className="tilter__title">Peter Wiemann</h3>
-							<p className="tilter__description">Gesellschafter</p>
-						</figcaption>
-						<svg className="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
-							<path d="M20.5,20.5h260v375h-260V20.5z" />
-						</svg>
-					</figure>
-				</a>
-
-			</div>
+		
             </div>
 			);
     }

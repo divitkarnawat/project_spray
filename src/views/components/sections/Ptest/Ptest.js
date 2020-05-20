@@ -1,5 +1,6 @@
 import React, { Component, createRef } from 'react';
 import './Ptest.scss';
+
 import img1 from '../../../../assets/img/abt1.jpg';
 import img2 from '../../../../assets/img/abt2.jpg';
 import img3 from '../../../../assets/img/abt3.jpg';
@@ -85,6 +86,7 @@ render()
                     </div>
                    </div>
                 </div>
+           
             </div>
     
         );

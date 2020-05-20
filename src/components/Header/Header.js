@@ -68,6 +68,8 @@ class Header extends Component{
         var prevScrollPos = window.pageYOffset;
         document.addEventListener('scroll', ()=>{
             let currentScrollPos = window.pageYOffset;
+            if(this.headerNavbar.current)
+            {
             if(currentScrollPos > prevScrollPos)
             {
                 this.headerNavbar.current.style.top = "-100px";
@@ -77,6 +79,7 @@ class Header extends Component{
                 this.headerNavbar.current.style.top = "0px";
                 this.hamburger.current.style.top = "14px";
             }
+        }
          prevScrollPos = currentScrollPos;
         })
     }
