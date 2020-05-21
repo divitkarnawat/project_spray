@@ -4,7 +4,7 @@ import './Ptest.scss';
 import img1 from '../../../../assets/img/abt4.jpg';
 import img2 from '../../../../assets/img/abt2.jpg';
 import img3 from '../../../../assets/img/abt3.jpg';
-//import img4 from '../../../../assets/img/abt1.jpg';
+import img4 from '../../../../assets/img/abt1.jpg';
 
 class Ptest extends Component{
     constructor(props)
@@ -22,7 +22,7 @@ class Ptest extends Component{
                 {
                     title: "LOREM IPSUM",
                     description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img1 
+                    imgURL: img4 
                 },
                 {
                     title: "LOREM IPSUM",
@@ -32,7 +32,7 @@ class Ptest extends Component{
                 {
                     title: "LOREM IPSUM",
                     description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img3
+                    imgURL: img1
                 }
             ],
             popactive: 0
