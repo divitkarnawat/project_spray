@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import './ProductsSection.scss'
-import product1 from '../../../../assets/img/9.jpg';
-import product2 from '../../../../assets/img/10.jpg';
-import product3 from '../../../../assets/img/11.jpg';
+import product1 from '../../../../assets/img/product1.jpg';
+import product2 from '../../../../assets/img/product2.jpg';
+import product3 from '../../../../assets/img/product3.jpg';
 class ProductsSection extends Component {
 
     constructor(props)
@@ -16,7 +16,7 @@ class ProductsSection extends Component {
                 titles: ["Sansiel Sanitär","Sansiel Antischimmel","Sansiel Duplex"],
                 description:[
                     [
-                        "Sansiel Sanitär ist eine Flüssigkeit, die nach dem Auftragen auf Oberflächen in kürzester Zeit(3 Min) zu einem harten, dünnen Film trocknet. Die antibakterielle, antivirale Wirkung( 99,9%) erfolgt binnen weniger Minuten. Die Wirksamkeit bleibt bei sachgemäßer Reinigung über 12 Monate erhalten",
+                        "Sansiel Sanitär ist eine Flüssigkeit, die nach dem Auftragen auf Oberflächen in kürzester Zeit (3 Min) zu einem harten, dünnen Film trocknet. Die antibakterielle, antivirale Wirkung (99,9%) erfolgt binnen weniger Minuten. Die Wirksamkeit bleibt bei sachgemäßer Reinigung über 12 Monate erhalten",
                         " Die Mikroorganismen finden keine Nahrung mehr und selbst multiresistente Keime zersetzen sich sofort und permanent.",
                         "Die Beschichtung stellt im ausgehärteten Zustand keine Risiken für Gesundheit und Umwelt dar."
                     ],
@@ -40,10 +40,12 @@ class ProductsSection extends Component {
                 <>
                 <div className="row project" data-aos="fade-up" data-aos-duration="1500"
     data-aos-easing="ease-in-out" >
-                    <div className="col-12 col-md-4 img_wrapper" >
+                    <div className="col-12 col-lg-6" >
+                        <div className="img_wrapper">
                         <img src={this.state.content.imgURLs[idx]} alt="Project1"/>
+                        </div>
                     </div>
-                    <div className="col-12 col-md-8 content_wrapper">
+                    <div className="col-12 col-lg-6 content_wrapper">
                         <h4 >{title}</h4>
                         <p className="desc">{this.state.content.description[idx].map((desc)=>{
                             return(

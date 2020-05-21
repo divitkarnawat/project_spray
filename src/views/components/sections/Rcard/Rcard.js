@@ -255,7 +255,8 @@ class Rcard extends Component{
     
         return(
         <div className="rcard_section">
-            <div className="title"><h2> TEAM</h2></div>
+            <h2 className="title"> TEAM</h2>
+			<div className="divider"/>
         <div class="content content--c1">
 				
 			

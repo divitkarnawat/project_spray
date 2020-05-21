@@ -7,14 +7,22 @@
     flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	min-height: 100vh;
+
 	padding-bottom: 30px;
+	padding-top: 40px;
 	background-color: #204379;
 		h2{
 		color: white;
-		font-weight: 700;
-		margin: 1em auto;
+		
+		margin: 1rem auto;
 	}
+	.divider
+{
+    border-bottom: 1.5px solid white;
+    width: 4%;
+    margin-bottom: 20px;
+    margin-top: -10px;
+}
    
 }
 
@@ -43,8 +51,8 @@
 .tilter {
 	display: block;
 	position: relative;
-	width: 350px;
-	height: 428px;
+	width: 251px;
+	height: 307px;
 	margin: 0;
 	color: #fff;
 	flex: none;
@@ -126,21 +134,21 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 3em;
+	padding: 1.8em;
 	text-shadow: 1px 1px 10px black;
 }
 
 .tilter__title {
 	margin: 0;
 	font-weight: normal;
-	font-size: 2em;
+	font-size: 1.7em;
 	font-family: 'Abril Fatface', serif;
 	line-height: 1;
 }
 
 .tilter__description {
 	margin: 1em 0 0 0;
-	font-size: 0.85em;
+	font-size: 0.65em;
 	letter-spacing: 0.15em;
 }
 

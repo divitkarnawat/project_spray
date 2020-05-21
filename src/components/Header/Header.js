@@ -24,7 +24,7 @@ class Header extends Component{
                 },
 
                 {
-                    linkName: "PRODUKTS",
+                    linkName: "PRODUKTE",
                     linkAdd: "#product",
                     active: false
                 },

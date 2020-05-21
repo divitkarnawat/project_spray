@@ -37,7 +37,7 @@ render()
     <textarea  id="message" name="message" placeholder="Nachricht" rows="8" ></textarea>
     </div>
     </div>
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Senden" />
 
   </form>
   </div>
