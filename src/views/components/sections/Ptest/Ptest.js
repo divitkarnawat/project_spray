@@ -15,24 +15,24 @@ class Ptest extends Component{
         this.state = {
             content: [
                 {
-                    title: "LOREM IPSUM",
-                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
+                    title: "Innovation und Entwicklung",
+                    description: "Dank jahrelanger Forschung ist es unserem Team gelungen, nicht nur ein tragfähiges Produkt, sondern auch eine innovative Lösung zu entwickeln, die mit dem jüngsten Anstieg der Pandemien noch relevanter wird",
                     imgURL: img3 
                 },
                 {
-                    title: "LOREM IPSUM",
-                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img4 
+                    title: "Sicherheit und Qualität",
+                    description: "Eines unserer Hauptziele ist es, Sicherheits- und Qualitätsstandards in unserer Fabrik, in der Lieferkette und bei unseren Kunden zu gewährleisten. Dies wird durch strenge Prozesse sichergestellt, die vom Management festgelegt werden.",
+                    imgURL: img1 
                 },
                 {
-                    title: "LOREM IPSUM",
-                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
+                    title: "Nachhaltigkeit",
+                    description: "Wir sind stolz darauf, dass nicht nur die Produkte, sondern die gesamte Organisation einem sehr genau definierten Nachhaltigkeitsprogramm folgen. Dies steht im Einklang mit den europäischen Vorschriften",
                     imgURL: img2 
                 },
                 {
-                    title: "LOREM IPSUM",
-                    description: "Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum. Lorem ipsum dolor sit amet, consectetur Lorem ipsum dolor sit amet, consectetur, consectetur Lorem ipsum",
-                    imgURL: img1
+                    title: "Eine Komplettlösung",
+                    description: "Mit Sansiel halten wir nicht nur Ihre Oberflächen sauber, sondern verhindern auch das Wachstum von Bakterien und Viren oder sogar Schimmel.",
+                    imgURL: img4
                 }
             ],
             popactive: 0
@@ -50,8 +50,7 @@ render()
 
               <div className="row" style={{margin: `0 auto`}}>
                   <div className="col-12">
-                <div className="pcard" data-aos="fade-up"  data-aos-once="true"
-   >
+                <div className="pcard" data-aos="fade-up"  data-aos-once="true">    
                     <div className="pimg">
                         <img src={projectCard.imgURL} />
                     </div>
@@ -59,6 +58,9 @@ render()
                         <h3 className="ptitle">
                             {projectCard.title}
                         </h3>
+                        <p className="pdesc">
+                            {projectCard.description}
+                        </p>
                         
                     </div>
                     </div>
@@ -82,6 +84,10 @@ render()
                         <h3 className="ptitle">
                             {projectCard.title}
                         </h3>
+                        <p className="pdesc">
+                            {projectCard.description}
+                        </p>
+                        
                       
                     </div>
                    </div>

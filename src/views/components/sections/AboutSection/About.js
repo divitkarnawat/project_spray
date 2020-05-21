@@ -25,7 +25,7 @@ class About extends Component {
         
             
             <p className="description description_about">
-            Sansiel GmbH vermarktet ein ein revolutionäres Produkt der Hygienetechnologie.
+            Sansiel GmbH vermarktet ein revolutionäres Produkt der Hygienetechnologie.
 Mit Sansiel Sanitär ist es uns gelungen ein Produkt auf den Markt zu bringen, das eine grundlegende Veränderung der Reinigungsprozesse mit sich bringt und dies auf ökologischer Basis - im industriellen Bereich, Gesundheitssektor und im Privathaushalt.
 Begleitet werden wir von einem Team aus Ärzten, Wissenschaftlern und Chemikern unter der Aufsicht der DTMD Universität Luxemburg.
 Des Weiteren bieten wir für unsere Produkte die Fachberatung und Schulung der Anwender hinsichtlich Produkteigenschaften und Verarbeitung an.

@@ -17,7 +17,7 @@ class ProductsSection extends Component {
                 description:[
                     [
                         "Sansiel Sanitär ist eine Flüssigkeit, die nach dem Auftragen auf Oberflächen in kürzester Zeit (3 Min) zu einem harten, dünnen Film trocknet. Die antibakterielle, antivirale Wirkung (99,9%) erfolgt binnen weniger Minuten. Die Wirksamkeit bleibt bei sachgemäßer Reinigung über 12 Monate erhalten",
-                        " Die Mikroorganismen finden keine Nahrung mehr und selbst multiresistente Keime zersetzen sich sofort und permanent.",
+                        "Die Mikroorganismen finden keine Nahrung mehr und selbst multiresistente Keime zersetzen sich sofort und permanent.",
                         "Die Beschichtung stellt im ausgehärteten Zustand keine Risiken für Gesundheit und Umwelt dar."
                     ],
                     [
@@ -63,7 +63,7 @@ class ProductsSection extends Component {
     return (
     <div className="section product_section">
       <div className="container">
-                    <h2 className="title title_about">PRODUKT</h2>
+                    <h2 className="title title_about">PRODUKTE</h2>
                     <div className="divider" />
           
             <div className="projects_list">

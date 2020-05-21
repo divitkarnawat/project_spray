@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
+    
   padding-bottom: 40px;
     .row
     {
@@ -14,14 +14,17 @@
     }
     .title
     {
+
         font-weight: 700;
         margin: 20px auto;
         padding: 20px;
 
     }
-    
+    div[class^="col"]
+    {
+        padding: 0;
+    }
 }
-
 
 
 
@@ -30,8 +33,8 @@
 .pcard
 {   
     position: relative;
-    width: 80%;
-    padding-top: 44%;
+    width: 70%;
+    padding-top: 40%;
     min-width: 300px;
     min-height: 170px;
     max-height: 95vh;
@@ -42,7 +45,7 @@
     overflow: hidden;
     box-shadow: 10px 5px 20px rgba(0,0,0,.7);
 
-  
+    
 }
 
 
@@ -72,11 +75,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     z-index: 1;
     background: transparent;
     color: white;
     padding: 12px;
+    transition: .4s;
+    background-color: rgba(0,0,0,.3);
     outline: transparent solid 2px;
         outline-offset: 0px;
         transition: .4s;
@@ -86,11 +91,20 @@
           
             text-shadow: 1px 1px 3px black, -1px 1px 2px black ;
             transition: .4s;
+            font-size: 170%;
+        }
+        .pdesc
+        {
+            display: none;   
+            transition: .4s;
+            padding: 10px;
+            text-align: center;
+            font-size: 80%;
         }
   
 }
 
-@media only screen and (min-width: 900px)
+@media only screen and (min-width: 1230px)
 {
     .ptitle{
         transform: translateY(-10px);
@@ -138,15 +152,24 @@
         {
         
             outline: #fff solid 2px; outline-offset: -10px;
-            background-color: rgba(0,0,0,.6);
-        
+            background-color: rgba(0,0,0,.75);
+            justify-content: space-evenly;
             transition: .4s;
         }
         .ptitle
         {
-            transform: translateY(0);
+            
             transition: .4s;
         }
+        .pdesc{
+            display: block;
+            opacity: 1;
+            transition: .4s ;
+        }
+        }
+        .pdesc{
+            opacity: 0;
+        
         }
         
     }
