@@ -27,7 +27,7 @@ class ProfileSection extends Component
     render()
     {
         let pid = 0;
-       
+      
 
         switch(this.props.match.params.pid)
         {
@@ -55,7 +55,7 @@ class ProfileSection extends Component
                            <h2> {this.state.content.name[pid]}</h2>
                        </div>
                        <div className="p_img">
-                           <img src={this.state.content.imgURL[pid]} alt="profile pic" />
+                           <img src={`http://35.158.221.15${this.state.content.imgURL[pid]}`} alt="profile pic" />
                          
                        </div>
                        <div className="p_desc">
