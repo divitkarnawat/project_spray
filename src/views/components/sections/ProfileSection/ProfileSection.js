@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './ProfileSection.scss';
 import teamCard1 from '../../../../assets/img/tcard_mf.png';
 import teamCard2 from '../../../../assets/img/tcard3.jpg';
-import teamCard3 from '../../../../assets/img/tcard4.jpg';
+
 
 class ProfileSection extends Component
 {
@@ -14,7 +14,7 @@ class ProfileSection extends Component
             content: {
                 name:["Gunter Gomola","Thomas Hensel","Michael Friedmann"],
                 desig:["Geschäftsführender Gesellschafter","Geschäftsführender Gesellschafter","Geschäftsführender Gesellschafter"],
-                imgURL:[teamCard2, teamCard3, teamCard1],
+                imgURL:[teamCard2, teamCard2, teamCard1],
                 desc:[
                     "",
                     "",

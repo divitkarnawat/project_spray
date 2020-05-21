@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './Rcard.scss';
 import teamCard1 from '../../../../assets/img/tcard_mf.png';
 import teamCard2 from '../../../../assets/img/tcard3.jpg';
-import teamCard3 from '../../../../assets/img/tcard4.jpg';
+
 
 class Rcard extends Component{
     constructor(props)
@@ -275,9 +275,9 @@ class Rcard extends Component{
 				</a>
 				</Link>
 			
-				<Link to={{pathname:"/profile/THensel",state: {teamCard3}}}><a className="tilter tilter--1"  data-aos="fade-up">
+				<Link to={{pathname:"/profile/THensel",state: {teamCard2}}}><a className="tilter tilter--1"  data-aos="fade-up">
 					<figure className="tilter__figure">
-						<img className="tilter__image" src={teamCard3} alt="img01" />
+						<img className="tilter__image" src={teamCard2} alt="img01" />
 						<div className="tilter__deco tilter__deco--shine"><div></div></div>
 						<figcaption className="tilter__caption">
 							<h3 className="tilter__title"> Thomas Hensel</h3>
