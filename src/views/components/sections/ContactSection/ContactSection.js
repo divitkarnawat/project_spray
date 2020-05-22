@@ -28,7 +28,7 @@ render()
       <input required  type="text" id="lname" name="lastname" placeholder="Nachname" />
     </div>
     <div className="col-12 " id = "lastinput">
-      <input required  type="text" id="email" name="email" placeholder="Email" />
+      <input required  type="text" id="email" name="email" placeholder="E-Mail" />
     </div>
      </div>
     

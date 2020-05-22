@@ -16,7 +16,7 @@ class Ptest extends Component{
             content: [
                 {
                     title: "Innovation und Entwicklung",
-                    description: "Dank jahrelanger Forschung ist es unserem Team gelungen, nicht nur ein tragfähiges Produkt, sondern auch eine innovative Lösung zu entwickeln, die mit dem jüngsten Anstieg der Pandemien noch relevanter wird",
+                    description: "Dank jahrelanger Forschung ist es unserem Team gelungen, nicht nur ein tragfähiges Produkt, sondern auch eine innovative Lösung zu entwickeln, die mit dem jüngsten Anstieg der Pandemien noch relevanter wird.",
                     imgURL: img3 
                 },
                 {
@@ -26,7 +26,7 @@ class Ptest extends Component{
                 },
                 {
                     title: "Nachhaltigkeit",
-                    description: "Wir sind stolz darauf, dass nicht nur die Produkte, sondern die gesamte Organisation einem sehr genau definierten Nachhaltigkeitsprogramm folgen. Dies steht im Einklang mit den europäischen Vorschriften",
+                    description: "Wir sind stolz darauf, dass nicht nur die Produkte, sondern die gesamte Organisation einem sehr genau definierten Nachhaltigkeitsprogramm folgen. Dies steht im Einklang mit den europäischen Vorschriften.",
                     imgURL: img2 
                 },
                 {

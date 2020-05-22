@@ -16,15 +16,15 @@ class ProductsSection extends Component {
                 titles: ["Sansiel Sanitär","Sansiel Antischimmel","Sansiel Duplex"],
                 description:[
                     [
-                        "Sansiel Sanitär ist eine Flüssigkeit, die nach dem Auftragen auf Oberflächen in kürzester Zeit (3 Min) zu einem harten, dünnen Film trocknet. Die antibakterielle, antivirale Wirkung (99,9%) erfolgt binnen weniger Minuten. Die Wirksamkeit bleibt bei sachgemäßer Reinigung über 12 Monate erhalten",
+                        "Sansiel Sanitär ist eine Flüssigkeit, die nach dem Auftragen auf Oberflächen in kürzester Zeit (3 Min) zu einem harten, dünnen Film trocknet. Die antibakterielle, antivirale Wirkung - mehr als 99,9 % aller Krankheitserreger werden erfolgreich beseitigt - erfolgt binnen weniger Minuten. Die Wirksamkeit bleibt bei sachgemäßer Reinigung über 12 Monate erhalten.",
                         "Die Mikroorganismen finden keine Nahrung mehr und selbst multiresistente Keime zersetzen sich sofort und permanent.",
                         "Die Beschichtung stellt im ausgehärteten Zustand keine Risiken für Gesundheit und Umwelt dar."
                     ],
                     [
-                        "Sansiel Antischimmel ist eine Antischimmel- Antialgenfarbe, die sowohl im Innen- wie auch Außenbereich eingesetzt wird. Die Farbe wird auf die befallenen Stellen aufgetragen und verhindert Wachstum von Schimmel und Algen und bleibt bei sachgemäßem Einsatz über 12 Monate erhalten.",
+                        "Sansiel Antischimmel ist eine Antischimmel-Antialgenfarbe, die sowohl im Innen- wie auch Außenbereich eingesetzt wird. Die Farbe wird auf die befallenen Stellen aufgetragen und verhindert das Wachstum von Schimmel und Algen. Sie bleibt bei sachgemäßem Einsatz über 12 Monate erhalten.",
                     ],
                     [    
-                        "Sansiel Duplex ist ein Produkt, das aus zwei Komponenten besteht. Eingesetzt wird es in z.B. Wassertanks oder anderen geschlossenen Behältern, Schwimmbädern, etc.",
+                        "Sansiel Duplex ist ein Produkt, das aus zwei Komponenten besteht. Eingesetzt wird es in z. B. Wassertanks oder anderen geschlossenen Behältern, Schwimmbädern, etc.",
                         "Auch dort findet eine permanente Inhibition des Wachstums von Mikroorganismen statt. Die Zulassung für Trinkwasser ist gerade in Vorbereitung."
                     ] 
                     ]
