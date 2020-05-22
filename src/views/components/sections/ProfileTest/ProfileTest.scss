@@ -104,8 +104,8 @@ background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d
 }
 
 .profile_card-avatar {
-  width: 200px;
-  height: 200px;
+  width: 234px;
+  height: 195px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 0 0 40% 40%;
   object-position: top;
@@ -113,7 +113,7 @@ background-image: url('https://images.unsplash.com/photo-1549068106-b024baf5062d
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%) translateY(-32px);
+  transform: translateX(-50%) translateY(-38px);
 }
 
 .profile_card-fullname {
