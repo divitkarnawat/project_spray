@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 import './ProfileSection.scss';
 import teamCard1 from '../../../../assets/img/tcard_mf.png';
 import teamCard2 from '../../../../assets/img/tcard3.jpg';
-
+import ProfileTest from '../ProfileTest/ProfileTest'
 
 class ProfileSection extends Component
 {
@@ -50,20 +50,16 @@ class ProfileSection extends Component
            <div className="section p_s">
            
                <div className="container">
-                   <div className="profile">
-                       <div className="p_name">
-                           <h2> {this.state.content.name[pid]}</h2>
-                       </div>
-                       <div className="p_img">
-                           <img src={`http://35.158.221.15${this.state.content.imgURL[pid]}`} alt="profile pic" />
-                         
-                       </div>
-                       <div className="p_desc">
-                           {desc}
-                       </div>
-                   </div>
+                  <ProfileTest 
+                  pname={this.state.content.name[pid]} 
+                  pdesig={this.state.content.desig[pid]}
+                  pimgURL={this.state.content.imgURL[pid]}
+                  pdesc={desc}
+
+                    />
                </div>
            </div>
+           
            </>
        );
     

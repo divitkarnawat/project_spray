@@ -6,7 +6,7 @@ import Header from '../../components/Header/Header.js';
 import Parallax from '../../components/Parallax/Parallax.js';
 import About from './sections/AboutSection/About.js';
 import Contact from './sections/ContactSection/ContactSection.js';
-import Ptest from './sections/Ptest/Ptest.js';
+
 
 import Rcard from './sections/Rcard/Rcard.js';
 import ProfileSection from './sections/ProfileSection/ProfileSection.js';
@@ -33,15 +33,18 @@ class App extends Component{
     <div id="about">   <About /></div>
     <div id="team"><Rcard /></div>
     <div id="product"><ProductsSection /></div>
+
     <div id="contact" >  <Contact /></div>
+       
+  <Footer />
+
     </Route>
 
  <Route   path="/profile/:pid"  component={ProfileSection} />
  
  </Switch>
 
-   
-  <Footer />
+
 
      </Router>
   );

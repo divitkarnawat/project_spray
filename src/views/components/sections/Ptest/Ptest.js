@@ -30,7 +30,7 @@ class Ptest extends Component{
                     imgURL: img2 
                 },
                 {
-                    title: "Eine Komplettlösung",
+                    title: "Breites anwendungsspektrum",
                     description: "Mit Sansiel halten wir nicht nur Ihre Oberflächen sauber, sondern verhindern auch das Wachstum von Bakterien und Viren oder sogar Schimmel.",
                     imgURL: img4
                 }
