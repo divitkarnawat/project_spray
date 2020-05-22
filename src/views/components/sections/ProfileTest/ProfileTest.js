@@ -30,7 +30,7 @@ class ProfileTest extends Component
 
             <div class="profile_card-header">
                 <div class="profile_card-cover" ></div>
-                <img class="profile_card-avatar" src={`http://localhost:3000${this.props.pimgURL}` } alt="avatar" />
+                <img class="profile_card-avatar" src={`http://35.158.221.15${this.props.pimgURL}` } alt="avatar" />
                 <h1 class="profile_card-fullname">{this.props.pname}</h1>
                 <h2 class="profile_card-jobtitle">{this.props.pdesig}</h2>
             </div>
