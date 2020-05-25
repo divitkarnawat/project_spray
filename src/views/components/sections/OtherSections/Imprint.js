@@ -30,9 +30,9 @@ class Imprint extends Component
         })
         return(
             <>
-                <div className="section">
+                <div className="section" id="i_s">
                     <div className="container ">
-                    <h1> Impressum </h1>
+                    <h2> Impressum </h2>
                     <div className="imprint">
                     {content}
                     </div>

@@ -1,3 +1,7 @@
+.dp_s
+{
+    overflow-x: hidden;
+}
 .imprint
 {
     margin: 30px auto;
@@ -8,7 +12,7 @@
     p
     {
         margin-bottom: .2rem;
-        font-size: 1.2em;
+     
     }
 }
 }
@@ -21,7 +25,7 @@
 .dataprot
 {
     overflow-x: hidden;
-    margin: 30px auto;
+
     text-align: left;
     h4 {
         margin-top: 30px;

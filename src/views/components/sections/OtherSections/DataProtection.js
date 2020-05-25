@@ -7,9 +7,9 @@ class DataProtection extends Component
     {
         return(
             <>
-                <div className="section">
+                <div className="section dp_s" id="dp_s">
                     <div className="container">
-                    <h1> Datenschutzerklärung</h1>
+                    <h2> Datenschutzerklärung</h2>
                     <div className="dataprot">
                         <div className="part">
                             <h4>Datenschutzerklärung der Sansiel GmbH</h4>

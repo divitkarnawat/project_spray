@@ -28,8 +28,8 @@ class Footer extends Component
                     </div>
                     <div className="col-sm-4 col-12 cf">
                         <div className="flinks">
-                        <div><Link to="/Datenschutzerklärung">Datenschutzerklärung</Link></div>
-                        <div><Link to="/Impressum">Impressum</Link></div>
+                        <div><Link to="/Datenschutzerklärung/#dp_s">Datenschutzerklärung</Link></div>
+                        <div><Link to="/Impressum/#i_s">Impressum</Link></div>
                        
                         
                         </div>
