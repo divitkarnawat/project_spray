@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import './Rcard.scss';
 import teamCard1 from '../../../../assets/img/tcard_mf.png';
 import teamCard2 from '../../../../assets/img/tcard3.jpg';

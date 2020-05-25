@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {HashLink as Link} from 'react-router-hash-link';
 import './Footer.scss';
 import LogoSVG from '../../assets/img/Sansiel_Logo_SVG.svg';
 class Footer extends Component
@@ -22,13 +23,13 @@ class Footer extends Component
                         <div className="contact_details">
         <div><i class="fas fa-map-marker-alt"></i> Augustaanlage 17, 68165 Mannheim</div>
                             <div><i class="fas fa-phone-alt"></i>+49 621 405492 00</div>
-                            <div><i class="fas fa-envelope"></i>info@sansiel.de</div>
+                            <div><i class="fas fa-envelope"></i> kontakt@sansiel.de</div>
                         </div>
                     </div>
                     <div className="col-sm-4 col-12 cf">
                         <div className="flinks">
-                        <div><a>Datenschutzerklärung</a></div>
-                        <div><a>Impressum</a></div>
+                        <div><Link to="/Datenschutzerklärung">Datenschutzerklärung</Link></div>
+                        <div><Link to="/Impressum">Impressum</Link></div>
                        
                         
                         </div>

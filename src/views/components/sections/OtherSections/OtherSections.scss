@@ -1,0 +1,53 @@
+.imprint
+{
+    margin: 30px auto;
+    text-align: left;
+    .part
+{
+    
+    p
+    {
+        margin-bottom: .2rem;
+        font-size: 1.2em;
+    }
+}
+}
+
+    .part
+{
+    margin: 40px auto;
+   
+}
+.dataprot
+{
+    overflow-x: hidden;
+    margin: 30px auto;
+    text-align: left;
+    h4 {
+        margin-top: 30px;
+    }
+    h6
+    {
+        margin-top: 15px;
+    }
+    a
+    {
+        padding: 0 3px;
+        letter-spacing: 0;
+        font-weight: 500;
+    }
+}
+
+
+    
+
+
+
+
+@media only screen and (max-width: 500px)
+{
+    .imprint{
+        text-align: center;
+    }
+  
+}

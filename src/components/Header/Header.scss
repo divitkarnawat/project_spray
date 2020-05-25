@@ -17,6 +17,17 @@
     padding: 10px;
     padding-left: 0px;
     width: 20%;
+    a
+    {
+      padding: 0;
+      display: block;
+      letter-spacing: 0;
+ 
+
+    }
+}
+object{
+  pointer-events: none;
 }
 
 .navLinks
@@ -47,8 +58,6 @@ a{
     letter-spacing: 1.5px;
     font-size: 1em;
     font-weight: 700;
-
-
 }
 
 a:hover{

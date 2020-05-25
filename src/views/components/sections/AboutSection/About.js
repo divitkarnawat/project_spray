@@ -17,6 +17,7 @@ class About extends Component {
   }
 
     render(){
+      console.log('in about')
     return (
     <div className="section abt_s">
       <div className="container">

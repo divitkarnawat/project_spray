@@ -1,4 +1,5 @@
 import React, { Component, createRef } from 'react';
+import {HashLink as Link} from 'react-router-hash-link';
 import './Header.scss';
 import LogoSVG from '../../assets/img/Sansiel_Logo_SVG.svg';
 class Header extends Component{
@@ -86,12 +87,12 @@ class Header extends Component{
 
 
     render(){
-        
+        console.log('in header');
         const navlinks = this.state.navLinks.map((navLink)=>{
             
             return(
             <div className="navLink" onClick={this.handleHamburger}>
-                <a href={navLink.linkAdd} alt={navLink.linkName}>{navLink.linkName}</a>
+                <Link smooth to={`/${navLink.linkAdd}`}> {navLink.linkName} </Link>
             </div>
             );
         });
@@ -108,10 +109,13 @@ class Header extends Component{
           </div>
         <div className="header-wrap" ref={this.headerNavbar}>
            <div className="brandLogo">
+           <Link smooth to="/">
            <object type="image/svg+xml" data={LogoSVG} style={{maxHeight: 40 + 'px'}}>
   Your browser does not support SVG
 </object>
+  </Link>
            </div>
+         
            <div className="navLinks">
                <div className="desktopView">
                {navlinks}
