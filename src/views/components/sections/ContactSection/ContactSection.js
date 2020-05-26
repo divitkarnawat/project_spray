@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 import './ContactSection.css';
 
 class Contact extends Component{
+  constructor(props)
+  {
+    super(props);
+    this.state={
+      firstname:"",
+      lastname: "",
+      email: "",
+      message:""
+    }
+  }
 
   handleInvalid = (e)=>{
     e.target.setCustomValidity('Lütfen işaretli yerleri doldurunuz'); 
@@ -9,10 +19,19 @@ class Contact extends Component{
   handleChange = (e)=>{
     if(e.target.value!="")
     e.target.setCustomValidity('');
+
+    this.setState({[e.target.name]: [e.target.value]});
+    
   }
   handleSubmit = (e)=>{
     e.preventDefault();
     alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
+    this.setState({
+      firstname:"",
+      lastname: "",
+      email: "",
+      message:""
+    });
   }
 render()
 {
@@ -33,19 +52,19 @@ render()
   <form  className="wpcf7" onSubmit={this.handleSubmit}>
     <div className = "row">
     <div className="col-12" id= "firstinput">
-      <input required  type="text" id="fname" name="firstname" placeholder="Vorname" onInvalid={this.handleInvalid} onChange={this.handleChange} title="Vorname"/>
+      <input required  type="text" id="fname" name="firstname" placeholder="Vorname" value={this.state.firstname} onInvalid={this.handleInvalid} onChange={this.handleChange} title="Vorname"/>
     </div>
     <div className="col-12">
-      <input required  type="text" id="lname" name="lastname" placeholder="Nachname" title="Nachname" onInvalid={this.handleInvalid} onChange={this.handleChange}/>
+      <input required  type="text" id="lname" name="lastname" placeholder="Nachname" title="Nachname" value={this.state.lastname} onInvalid={this.handleInvalid} onChange={this.handleChange}/>
     </div>
     <div className="col-12 " id = "lastinput">
-      <input required  type="text" id="email" name="email" placeholder="E-Mail" title="E-Mail" onInvalid={this.handleInvalid} onChange={this.handleChange} />
+      <input required  type="text" id="email" name="email" placeholder="E-Mail" title="E-Mail" value={this.state.email} onInvalid={this.handleInvalid} onChange={this.handleChange} />
     </div>
      </div>
     
     <div className="row">
         <div className="col-12">
-    <textarea  id="message" name="message" placeholder="Nachricht" rows="8" required onInvalid={this.handleInvalid} onChange={this.handleChange}/>
+    <textarea  id="message" name="message" placeholder="Nachricht" rows="8" required value={this.state.message} onInvalid={this.handleInvalid} onChange={this.handleChange}/>
     </div>
     </div>
     <input type="submit" value="Senden" />
