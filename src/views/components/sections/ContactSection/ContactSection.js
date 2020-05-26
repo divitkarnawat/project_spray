@@ -14,7 +14,7 @@ class Contact extends Component{
   }
 
   handleInvalid = (e)=>{
-    e.target.setCustomValidity('Lütfen işaretli yerleri doldurunuz'); 
+    e.target.setCustomValidity('Bitte füllen Sie dieses Feld aus'); 
   }
   handleChange = (e)=>{
     if(e.target.value!="")
