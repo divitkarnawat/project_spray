@@ -10,16 +10,27 @@ class Contact extends Component{
       lastname: "",
       email: "",
       message:""
+   
     }
   }
 
+
   handleInvalid = (e)=>{
-    e.target.setCustomValidity('Bitte füllen Sie dieses Feld aus'); 
+    
+    if(document.documentElement.clientWidth > 500)
+    e.target.setCustomValidity('Bitte füllen Sie dieses Feld aus');
+    else{
+      e.target.setCustomValidity(' ');
+      
+    }
+    e.target.style.borderColor = "red";
   }
   handleChange = (e)=>{
     if(e.target.value!="")
+    {
     e.target.setCustomValidity('');
-
+    e.target.style.borderColor = "#204379";
+  }
     this.setState({[e.target.name]: [e.target.value]});
     
   }

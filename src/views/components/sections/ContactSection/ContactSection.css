@@ -129,7 +129,7 @@ input[type=text], textarea {
     margin-top: 10px;
   }
  
-   
+
   
 
 .wpcf7 input[type="submit"]:hover{
@@ -142,8 +142,11 @@ input[type=text], textarea {
 
 
 
-
  
 .wpcf7-textarea {
 height: 8em;
+}
+
+.wpcf7 .invalid-red{
+  border-color:red !important;
 }
