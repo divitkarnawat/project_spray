@@ -71,7 +71,7 @@ class Header extends Component{
             let currentScrollPos = window.pageYOffset;
             if(this.headerNavbar.current)
             {
-            if(currentScrollPos > prevScrollPos)
+            if((currentScrollPos > prevScrollPos) && (currentScrollPos > 640))
             {
                 this.headerNavbar.current.style.top = "-100px";
                 this.hamburger.current.style.top = "-100px";
