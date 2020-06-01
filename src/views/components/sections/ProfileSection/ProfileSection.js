@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
 import './ProfileSection.scss';
-import teamCard1 from '../../../../assets/img/tcard_mf.jpg';
-import teamCard3 from '../../../../assets/img/tcard_th.jpg';
-import teamCard2 from '../../../../assets/img/tcard_gg.jpg';
+import teamCard1 from '../../../../assets/img/mf.jpg';
+import teamCard3 from '../../../../assets/img/th.jpg';
+import teamCard2 from '../../../../assets/img/gg.jpg';
 
 class ProfileSection extends Component
 {

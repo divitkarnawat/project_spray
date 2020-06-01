@@ -37,11 +37,7 @@ class Contact extends Component{
   handleSubmit = (e)=>{
     e.preventDefault();
     alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
-    fetch('https://sansiel.de/gdform.php',{
-      method: 'post',
-      body: this.state.firstname
-    }).then((res)=>console.log(res)).catch((err)=>console.log(err));
-    this.setState({
+      this.setState({
       firstname:"",
       lastname: "",
       email: "",

@@ -12,19 +12,18 @@
 }
 .p_img
 
-{   
-    height : 399.1px ;
-    width : 326.3px ;
-    max-height : 90vh ;
-    max-width : 90vw ;
+{   	width: 326.33px;
+    height: 399.1px;
+  
     margin : 20px auto ;
-    box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+    background: transparent;
     border-radius : 20px ;
     img
     {
         border-radius : 20px ;
         height : 100% ;
         width : 100% ;
+        object-fit: contain;
         
     }
 }

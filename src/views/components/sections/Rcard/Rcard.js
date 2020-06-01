@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import {HashLink as Link} from 'react-router-hash-link';
 import './Rcard.scss';
-import teamCard1 from '../../../../assets/img/tcard_mf.jpg';
-import teamCard2 from '../../../../assets/img/tcard_gg.jpg';
-import teamCard3 from '../../../../assets/img/tcard_th.jpg';
+import teamCard1 from '../../../../assets/img/mf.jpg';
+import teamCard2 from '../../../../assets/img/gg.jpg';
+import teamCard3 from '../../../../assets/img/th.jpg';
 
 class Rcard extends Component{
     constructor(props)

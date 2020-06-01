@@ -57,6 +57,8 @@
 	color: #fff;
 	flex: none;
 	perspective: 1000px;
+	border-radius: 10px;
+	overflow: none;
 }
 
 .tilter * {
@@ -77,7 +79,9 @@
 	width: 100%;
 	height: 100%;
 	display: block;
-	box-shadow: 7px 8px 25px black;
+	border-radius: 10px;
+	box-shadow: 7px 8px 15px rgba(0,0,0,.5);
+	overflow: hidden;
 }
 
 .tilter__figure > * {
@@ -95,15 +99,7 @@
 	position: relative;
 }
 
-.tilter__figure::before {
-	content: '';
-	position: absolute;
-	width: 90%;
-	height: 90%;
-	top: 5%;
-	left: 5%;
-	box-shadow: 0 30px 20px rgba(35,32,39,1);
-}
+
 
 .tilter__deco {
 	position: absolute;
@@ -122,20 +118,18 @@
 	height: 200%;
 	top: -50%;
 	left: -50%;
-	background-image: linear-gradient(45deg, rgba(0, 0, 0, .5) 40%, rgba(255, 255, 255, .1) 50%,transparent 100%);
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, .5) 30%, rgba(255, 255, 255, .1) 50%,transparent 100%);
 }
 
 .tilter__deco--lines {
 	fill: none;
-	stroke: #fff;
-	stroke-width: 1.5px;
 }
 
 .tilter__caption {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding: 3em;
+	padding: 2em 3em;
 	text-shadow: 1px 1px 10px black;
 }
 
