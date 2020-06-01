@@ -141,7 +141,7 @@ class ProductsSection extends Component {
 
 
            <h3 className="title" data-aos="fade-up" data-aos-duration="1500"
-    data-aos-easing="ease-in-out"> Kombiprodukte der Firmen Sansiel/ Duranox</h3>
+    data-aos-easing="ease-in-out">Kombiprodukte der Firmen Sansiel & Duranox</h3>
            <div className="projects_list">
                 {projectsList2}
            </div>
