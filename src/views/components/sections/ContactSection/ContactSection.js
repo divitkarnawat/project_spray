@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './ContactSection.css';
-
+import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 class Contact extends Component{
   constructor(props)
   {
@@ -34,15 +35,40 @@ class Contact extends Component{
     this.setState({[e.target.name]: [e.target.value]});
     
   }
-  handleSubmit = (e)=>{
-    e.preventDefault();
-    alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
-      this.setState({
+  
+  resetForm = () => {
+    this.setState({
       firstname:"",
       lastname: "",
       email: "",
       message:""
     });
+  }
+  handleCaptcha=(value)=>{
+    console.log(value);
+  }
+
+  handleSubmit = (e)=>{
+    e.preventDefault();
+    const {firstname, lastname, email, message} =  this.state;
+    let templateParams = {
+      from_name: firstname,
+      to_name: 'sansiel',
+      reply_to : email,
+      message_html: message,
+      firstname,
+      lastname,
+      email,
+      message
+ }
+ emailjs.send("gmail", "template_74tsu5x6",templateParams, "user_sWVyIEywbQTDzFH6OGZ98").then((res)=>{
+   console.log(res);
+   alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
+    
+ }).catch(err => console.log(err));
+    
+    
+    this.resetForm();
   }
 render()
 {
@@ -78,7 +104,12 @@ render()
     <textarea  id="message" name="message" placeholder="Nachricht" rows="8" required value={this.state.message} onInvalid={this.handleInvalid} onChange={this.handleChange}/>
     </div>
     </div>
+    <ReCAPTCHA
+    sitekey="6LeMW_8UAAAAAEviqyazs6RGElnP--XRAkJXqo0w"
+    onChange={this.handleCaptcha}
+  />
     <input type="submit" value="Senden" />
+
 
   </form>
   </div>
