@@ -13,6 +13,7 @@ class Contact extends Component{
       message:""
    
     }
+    this.recaptchaRef = React.createRef();
   }
 
 
@@ -44,12 +45,12 @@ class Contact extends Component{
       message:""
     });
   }
-  handleCaptcha=(value)=>{
-    console.log(value);
-  }
+ 
 
   handleSubmit = (e)=>{
     e.preventDefault();
+    if(this.recaptchaRef.current.getValue())
+    {
     const {firstname, lastname, email, message} =  this.state;
     let templateParams = {
       from_name: firstname,
@@ -62,13 +63,13 @@ class Contact extends Component{
       message
  }
  emailjs.send("gmail", "template_74tsu5x6",templateParams, "user_sWVyIEywbQTDzFH6OGZ98").then((res)=>{
-   console.log(res);
    alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
+   this.resetForm();
+ }).catch(()=> alert('Bitte füllen Sie das Recaptcha aus'));
+}
+else
+alert('Bitte füllen Sie das Recaptcha aus');
     
- }).catch(err => console.log(err));
-    
-    
-    this.resetForm();
   }
 render()
 {
@@ -104,10 +105,16 @@ render()
     <textarea  id="message" name="message" placeholder="Nachricht" rows="8" required value={this.state.message} onInvalid={this.handleInvalid} onChange={this.handleChange}/>
     </div>
     </div>
+    <div className="row" style={{maxWidth: `90vw`}}>
     <ReCAPTCHA
+    
+    ref={this.recaptchaRef}
+    hl="de"
+    style={{margin: `10px auto`}}
     sitekey="6LeMW_8UAAAAAEviqyazs6RGElnP--XRAkJXqo0w"
-    onChange={this.handleCaptcha}
+    
   />
+  </div>
     <input type="submit" value="Senden" />
 
 

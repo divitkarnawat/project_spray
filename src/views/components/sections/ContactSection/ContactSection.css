@@ -150,3 +150,12 @@ height: 8em;
 .wpcf7 .invalid-red{
   border-color:red !important;
 }
+
+iframe{
+  width: 100% !important;
+  display: flex;
+}
+.rc-anchor-center-item
+{
+  font-size: .8em !important;
+}
