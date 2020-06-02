@@ -10,10 +10,12 @@ class Contact extends Component{
       firstname:"",
       lastname: "",
       email: "",
-      message:""
+      message:"",
+      status: ""
    
     }
     this.recaptchaRef = React.createRef();
+    this.send_status = React.createRef();
   }
 
 
@@ -42,7 +44,8 @@ class Contact extends Component{
       firstname:"",
       lastname: "",
       email: "",
-      message:""
+      message:"",
+      status: ""
     });
   }
  
@@ -51,6 +54,8 @@ class Contact extends Component{
     e.preventDefault();
     if(this.recaptchaRef.current.getValue())
     {
+    this.send_status.current.style.color = "orange";
+    this.setState({status: "Senden..."});
     const {firstname, lastname, email, message} =  this.state;
     let templateParams = {
       from_name: firstname,
@@ -63,13 +68,16 @@ class Contact extends Component{
       message
  }
  emailjs.send("gmail", "template_74tsu5x6",templateParams, "user_sWVyIEywbQTDzFH6OGZ98").then((res)=>{
-   alert('Wir freuen uns, dass Sie sich die Zeit genommen haben, uns zu schreiben.Wir werden uns bald bei Ihnen melden.');
-   this.resetForm();
- }).catch(()=> alert('Bitte füllen Sie das Recaptcha aus'));
+  this.send_status.current.style.color = "green";
+   this.setState({status: 'Ihre Nachricht wurde gesendet'})
+   setTimeout(()=>{this.resetForm()}, 2000);
+ }).catch();
 }
 else
-alert('Bitte füllen Sie das Recaptcha aus');
-    
+{
+  this.send_status.current.style.color = "red";
+this.setState({status: "Bitte füllen Sie das Captcha aus"});
+}   
   }
 render()
 {
@@ -105,9 +113,9 @@ render()
     <textarea  id="message" name="message" placeholder="Nachricht" rows="8" required value={this.state.message} onInvalid={this.handleInvalid} onChange={this.handleChange}/>
     </div>
     </div>
-    <div className="row" style={{maxWidth: `90vw`}}>
+    <div className="row contact_recaptcha" >
     <ReCAPTCHA
-    
+    className = "contact_recaptcha_main"
     ref={this.recaptchaRef}
     hl="de"
     style={{margin: `10px auto`}}
@@ -116,8 +124,7 @@ render()
   />
   </div>
     <input type="submit" value="Senden" />
-
-
+    <div className="status" ref={this.send_status}>{this.state.status}</div>
   </form>
   </div>
   </div>
