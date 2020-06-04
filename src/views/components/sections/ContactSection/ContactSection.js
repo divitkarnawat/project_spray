@@ -55,8 +55,8 @@ class Contact extends Component{
    e.preventDefault();
     let axiosConfig = {
       headers: {
-          'Content-Type': 'application/json;charset=UTF-8',
-          "Access-Control-Allow-Origin": "*",
+         
+          "Access-Control-Allow-Origin": "*"
       }
     };
     const {first_name, last_name, email, message} =  this.state;
@@ -65,7 +65,7 @@ class Contact extends Component{
     axios.post('https://sansiel.de/hello.php', {
       first_name: 'Fred',
       last_name: 'Flintstone'
-    })
+    },axiosConfig)
     .then(function (response) {
       console.log("form submitted");
     })
