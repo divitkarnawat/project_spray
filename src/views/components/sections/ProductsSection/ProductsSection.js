@@ -4,7 +4,7 @@ import './ProductsSection.scss'
 import product1 from '../../../../assets/img/product1.jpg';
 import product2 from '../../../../assets/img/product2.jpg';
 import product3 from '../../../../assets/img/product3.jpg';
-import product4 from '../../../../assets/img/product4.jpg';
+
 import product5 from '../../../../assets/img/product5.jpg';
 import product5s from '../../../../assets/img/product5s.jpg';
 import product6 from '../../../../assets/img/product6.jpg';
@@ -39,7 +39,7 @@ class ProductsSection extends Component {
             },
             content2: {
                 len: 3,
-                imgURLs: [product4,product5,product6],
+                imgURLs: [product4s,product5,product6],
                 imgURLsS: [product4s, product5s, product6s],
                 titles: ["Sandura Floor","Sandura Plast/Edelstahl","Sandura Glas"],
                 description:[
